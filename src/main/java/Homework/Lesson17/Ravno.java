@@ -1,31 +1,51 @@
 package Homework.Lesson17;
 
+public class Ravno {
 
-    public class Ravno {
+    public static void ravenstvo(StringBuilder s1, StringBuilder s2) {
 
-        public static void ravenstvo(StringBuilder s1, StringBuilder s2) {
-            int length1 = s1.length();
-            int length2 = s2.length();
+        int i = 0;
+        int y = 0;
 
-            if (length1 != length2) {
-                System.out.println(false);
-                return;
-            }
-
-            for (int i = 0; i < length1; i++) {
-                if (s1.charAt(i) != s2.charAt(i)) {
-                    System.out.println(false);
-                    return;
-                }
-            }
-
-            System.out.println(true);
+        if (s1.length() != s2.length()) {
+            System.out.println(false);
+            return;
         }
+        if (s1.length() == s2.length()) {
+            OUNER:
+            while (i < s1.length()) {
+                INNER:
+                while (y < s2.length()) {
+                    char newElement = s1.charAt(i);
+                    char newElement2 = s2.charAt(y);
+                    if (newElement == newElement2) {
+                        i++;
+                        y++;
 
-        public static void main(String[] args) {
-            StringBuilder s = new StringBuilder("Ananas");
-            StringBuilder b = new StringBuilder("Ananas");
-            Ravno.ravenstvo(s, b);
+                        if (i == s1.length() && y == s2.length()) {
+                            System.out.println(true);
+                            break OUNER;
+                        }
+
+
+                    } else {
+                        System.out.println(false);
+                        break OUNER;
+
+                    }
+
+                }
+
+            }
+
         }
     }
 
+    public static void main(String[] args) {
+        StringBuilder s = new StringBuilder("Ananas");
+        StringBuilder b = new StringBuilder("Ananas");
+        Ravno.ravenstvo(s, b);
+
+
+    }
+}
