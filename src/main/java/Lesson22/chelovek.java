@@ -42,7 +42,6 @@ class Test
     public static void main(String[] args) {
         chelovek c = new chelovek("male");
         c.setName(new StringBuilder("Oleg"));
-        c.getName().append("!!!");
         System.out.println(c.getName());
 
     }
