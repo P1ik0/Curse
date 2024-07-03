@@ -82,7 +82,7 @@ public class Lesson25 {
                 b0.sleep();
                 b0.fly();
             }
-            System.out.println("------------------------------------------------------");
+
 
         }
 
