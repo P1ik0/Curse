@@ -47,9 +47,7 @@ public class Lesson25 {
                 l0.rum();
 
             }
-            else{
-                System.out.println("Не подхлдит");
-            }
+            System.out.println("------------------------------------------------------");
         }
         for(Animal an :array2){
              if (an instanceof Lev){
@@ -84,8 +82,10 @@ public class Lesson25 {
                 b0.sleep();
                 b0.fly();
             }
+            System.out.println("------------------------------------------------------");
 
         }
+
 
     }
 }
