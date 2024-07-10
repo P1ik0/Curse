@@ -13,7 +13,7 @@ public class Ex {
             }catch (Exception e){
                 System.out.println(e.getMessage());
             }finally {
-                System.out.println("eto inner finnally block");
+                System.out.println("eto inner ш  finnally block");
             }
         }
         catch (RuntimeException e){

@@ -8,6 +8,7 @@ public class Test2 {
     public static void main(String[] args) {
         List<String> list =  List.of("hi","bye","kak dela");
 
+        ArrayList<String>al;
 
         for (String s:list){
             Predicate<String> p = z-> z.length()>4;
